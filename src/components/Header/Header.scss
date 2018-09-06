@@ -1,0 +1,24 @@
+.g-nav {
+  display: flex;
+  margin: 0;
+  height: 40px;
+  background-color: #2B3A42;
+  list-style: none;
+  li {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .alink {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #fff;
+    text-decoration: none;
+    &:hover,
+    &.active {
+      color: #88d8ff;
+    }
+  }
+}
