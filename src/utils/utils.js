@@ -1,6 +1,19 @@
-export function add(param1, param2) {
-  return param1 + param2;
-}
+export const arraySum = function(array) {
+  var key;
+  var sum = 0;
+
+  if (typeof array !== 'object') {
+    return null;
+  }
+
+  for (key in array) {
+    if (!isNaN(parseFloat(array[key]))) {
+      sum += parseFloat(array[key]);
+    }
+  }
+
+  return sum;
+};
 
 export const simpleSort = function(arr, key, order = 'asc') {
   if (Array.isArray(arr) === true) {
@@ -1315,21 +1328,4 @@ export const arrayShift = function(inputArr) {
   if (inputArr.length > 0) {
     return inputArr.shift();
   }
-};
-
-export const arraySum = function(array) {
-  var key;
-  var sum = 0;
-
-  if (typeof array !== 'object') {
-    return null;
-  }
-
-  for (key in array) {
-    if (!isNaN(parseFloat(array[key]))) {
-      sum += parseFloat(array[key]);
-    }
-  }
-
-  return sum;
 };

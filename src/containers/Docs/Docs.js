@@ -1,10 +1,10 @@
 import React from 'react';
-import { add } from '@utils/utils';
+import { arraySum } from '@utils/utils';
 import './Docs.scss';
 
 class About extends React.Component {
   render() {
-    const sum = add(1, 3);
+    const sum = arraySum([1, 3]);
     return (
       <div className="page-docs">
         <h1>Docs Page</h1>

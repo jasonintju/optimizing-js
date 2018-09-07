@@ -1,11 +1,11 @@
 import React from 'react';
-import { add } from '@utils/utils';
+import { arraySum } from '@utils/utils';
 import './test';
 import './About.scss';
 
 class About extends React.Component {
   render() {
-    const sum = add(12, 3);
+    const sum = arraySum([12, 3]);
     return (
       <div className="page-about">
         <h1>About Page</h1>
