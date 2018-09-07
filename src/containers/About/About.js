@@ -1,5 +1,6 @@
 import React from 'react';
 import { add } from '@utils/utils';
+import './test';
 import './About.scss';
 
 class About extends React.Component {
