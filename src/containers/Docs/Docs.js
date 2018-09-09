@@ -2,7 +2,7 @@ import React from 'react';
 import { arraySum } from '@utils/utils';
 import './Docs.scss';
 
-class About extends React.Component {
+class Docs extends React.Component {
   render() {
     const sum = arraySum([1, 3]);
     return (
@@ -13,4 +13,4 @@ class About extends React.Component {
     );
   }
 }
-export default About;
+export default Docs;
